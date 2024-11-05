@@ -5,17 +5,6 @@
     "version": "1.0",
     "author": "Mar López"
   },
-  "levels": [
-    {
-      "levelId": 1,
-      "name": "El desnonament",
-      "description": "",
-      "objectives": [],
-      "misions": [],
-      "npcs": [],
-      "enemies": []
-    }
-  ],
   "settings": {
     "initialLives": 3,
     "dificulty": "normal",
