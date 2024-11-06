@@ -1,4 +1,4 @@
-import { GameProvider } from "./contexts/GameContext";
+import { GameProvider } from "./contexts/game";
 import Router from "../src/routes/Router";
 
 function App() {
