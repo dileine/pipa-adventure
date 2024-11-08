@@ -1,11 +1,12 @@
-import { GameProvider } from "./contexts/game";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Router from "../src/routes/Router";
 
 function App() {
   return (
-    <GameProvider>
+    <BrowserRouter>
       <Router />
-    </GameProvider>
+      </BrowserRouter>
   );
 }
 
