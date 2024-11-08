@@ -19,6 +19,7 @@ const StartScreen = () => {
         decisions difícils per aconseguir una llar en aquesta ciutat hostil.
       </p>
       <Link to='/pipa/CiutatVella'>Som-hi!</Link>
+      <Link to='/'>Tornar</Link>
     </>
   );
 };
