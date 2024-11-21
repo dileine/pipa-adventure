@@ -1,10 +1,12 @@
 import React from "react";
-import PlayerScreen from "./playerScreen";
+import PlayerScreen from "./PlayerScreen";
+import LevelScreen from "./LevelScreen";
 
 const GameScreen = () => {
   return (
     <>
       <PlayerScreen />
+      <LevelScreen />
     </>
   );
 };
