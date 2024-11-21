@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <h1>PiPa: Pisos i Paranys</h1>
-      <Link to='/pipa'>Start</Link>
+      <Link to='/start'>Start</Link>
       <button>Settings</button>
       <button>About</button>
     </>

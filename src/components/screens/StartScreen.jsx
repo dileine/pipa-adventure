@@ -18,7 +18,7 @@ const StartScreen = () => {
         reptes, resoldre enigmes, enfrontar-te a enemics poderosos i prendre
         decisions difícils per aconseguir una llar en aquesta ciutat hostil.
       </p>
-      <Link to='/pipa/CiutatVella'>Som-hi!</Link>
+      <Link to='/pipa'>Som-hi!</Link>
       <Link to='/'>Tornar</Link>
     </>
   );
