@@ -1,11 +1,12 @@
 import React from "react";
-import PlayerStats from "../stats/PlayerStats";
+import PlayerStats from "../dashboard/PlayerStats";
+import Inventory from "../dashboard/Inventory";
 
 const PlayerScreen = () => {
   return (
     <>
       <PlayerStats />
-      {/* inventory */}
+      <Inventory />
       {/* quest list */}
     </>
   );
