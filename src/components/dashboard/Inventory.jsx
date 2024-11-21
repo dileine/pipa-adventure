@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
-import { PlayerContext } from "../../contexts/PlayerContext";
+import { PlayerContext } from "../../contexts/player";
+import { icons } from "../../data/assets";
 
 const Inventory = () => {
   const { inventory } = useContext(PlayerContext);
