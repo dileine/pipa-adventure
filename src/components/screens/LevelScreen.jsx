@@ -1,14 +1,17 @@
 import React, { useContext } from "react";
 import { GameContext } from "../../contexts/game";
-import game from "../../data/game.json";
+import LevelOne from "../levels/LevelOne";
 
 const LevelScreen = () => {
   const { currentLevel } = useContext(GameContext);
-  const levelName = game.levels[currentLevel] || "Nivell desconegut";
+
+  const levelComponents = {
+    1: <LevelOne />,
+  };
 
   return (
     <>
-      <h1>{levelName}</h1>
+      <h1>{levelComponents[currentLevel] || "Nivell desconegut"}</h1>
     </>
   );
 };

@@ -6,8 +6,8 @@ const Home = () => {
     <>
       <h1>PiPa: Pisos i Paranys</h1>
       <Link to='/start'>Start</Link>
-      <button>Settings</button>
-      <button>About</button>
+      {/*<button>Settings</button>
+      <button>About</button>*/}
     </>
   );
 };
