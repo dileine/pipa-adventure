@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { PlayerContext } from "../contexts/PlayerContext";
+import { PlayerContext } from "../contexts/player";
 
 export const useHealth = () => {
   const [health, setHealth] = useContext(PlayerContext);
@@ -21,5 +21,5 @@ export const useHealth = () => {
     }
   };
 
-  return { increaseHealth, decreaseHealth};
+  return { increaseHealth, decreaseHealth };
 };
