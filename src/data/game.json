@@ -9,5 +9,8 @@
     "initialLives": 3,
     "dificulty": "normal",
     "languages": ["ca"]
+  },
+  "levels": {
+    "1": "Ciutat Vella"
   }
 }
