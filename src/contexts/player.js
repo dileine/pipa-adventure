@@ -8,8 +8,6 @@ export const PlayerProvider = ({ children }) => {
   const [inventory, setInventory] = useState(new Map());
   const [experience, setExperience] = useState(0);
 
-  //TO DO: add visitedLocation, completedQuests, activeQuests...
-
   return (
     <PlayerContext.Provider
       value={{

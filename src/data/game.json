@@ -1,12 +1,11 @@
 {
   "gameInfo": {
     "title": "PiPa",
-    "description": "L'aventura més difícil de la vida adulta a Barcelona: trobar pis.",
+    "description": "La gran aventura de la vida adulta a Barcelona: trobar pis.",
     "version": "1.0",
     "author": "Mar López"
   },
   "settings": {
-    "initialLives": 3,
     "dificulty": "normal",
     "languages": ["ca"]
   },
