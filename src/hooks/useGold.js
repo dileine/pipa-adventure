@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { PlayerContext } from "../contexts/player";
 
 export const useGold = () => {
-  const [gold, setGold] = useContext(PlayerContext);
+  const { gold, setGold } = useContext(PlayerContext);
 
   const increaseGold = (goldToIncrease) => {
     setGold(gold + goldToIncrease);

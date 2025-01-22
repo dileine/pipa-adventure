@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { PlayerContext } from "../contexts/player";
 
 export const useHealth = () => {
-  const [health, setHealth] = useContext(PlayerContext);
+  const { health, setHealth } = useContext(PlayerContext);
 
   const increaseHealth = (healthToIncrease) => {
     if (health < 100) {
