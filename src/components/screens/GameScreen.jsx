@@ -21,7 +21,7 @@ const GameScreen = () => {
       <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>
         {popupContent}
       </Popup>
-      {/* quest list */}
+      {/* TO DO: quest list */}
       <Link to='/'>Tornar</Link>
       <LevelScreen />
     </>

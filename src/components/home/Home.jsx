@@ -5,7 +5,11 @@ const Home = () => {
   return (
     <>
       <h1>PiPa: Pisos i Paranys</h1>
-      <Link to='/start'>Start</Link>
+      <p>
+        Una aventura de text fantàstica i satírica ambientada en la Barcelona
+        actual.
+      </p>
+      <Link to='/start'>Començar</Link>
       {/*<button>Settings</button>
       <button>About</button>*/}
     </>

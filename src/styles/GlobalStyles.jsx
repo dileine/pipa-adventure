@@ -49,9 +49,8 @@ h1, h2, {
 
   a{
   font-size: 2rem;
-  &:hover{
-    color: green;
-    }
+   color: green;
+  
   }
 
   button{
