@@ -33,6 +33,15 @@ h1, h2, {
      color: ${THEME.color.secondary};
     }
 
+  div{
+    font-size:2.5rem;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
   p {
     font-size: 3rem;
     color: ${THEME.color.text};
@@ -48,8 +57,8 @@ h1, h2, {
   button{
     font-size: 2rem;
     color: ${THEME.color.text};
-    border: solid 2px ${THEME.color.border};
-    border-radius: 15px;
+    border: none;
+    border-radius: 25px;
     padding: 1rem 2rem;
     cursor: pointer;
     transition: 0.3s;
