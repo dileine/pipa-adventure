@@ -38,8 +38,24 @@ h1, h2, {
     color: ${THEME.color.text};
   }
 
+  a{
+  font-size: 2rem;
+  &:hover{
+    color: green;
+    }
+  }
+
   button{
-  
+    font-size: 2rem;
+    color: ${THEME.color.text};
+    border: solid 2px ${THEME.color.border};
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background: ${THEME.color.primary};
+    }
   }
 
   .logo {
