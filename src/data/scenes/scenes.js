@@ -1,5 +1,5 @@
-import { Scene } from "../../scene";
-import { Option } from "../../option";
+import { Scene } from "../classes/scene";
+import { Option } from "../classes/option";
 
 const playerName = "Pipa";
 
