@@ -1,5 +1,5 @@
 import React from "react";
-import ActionButton from "../components/buttons/ActionButton";
+import ActionButton from "../../components/buttons/ActionButton";
 
 export class Option {
   constructor(
