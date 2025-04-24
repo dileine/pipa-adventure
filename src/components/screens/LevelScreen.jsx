@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GameContext } from "../../contexts/game";
-import game from "../../data/game.json";
+import game from "../../data/config/game.json";
 import OptionButton from "../buttons/OptionButton";
 
 const LevelScreen = () => {
