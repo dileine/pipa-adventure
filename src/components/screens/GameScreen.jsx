@@ -16,6 +16,7 @@ const GameScreen = () => {
   };
   return (
     <>
+      {/*TO DO: popup form to get: playerName*/}
       <PlayerStats />
       <button onClick={handleClickInventory}>Inventory</button>
       <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>

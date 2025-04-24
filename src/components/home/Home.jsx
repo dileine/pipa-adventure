@@ -10,7 +10,8 @@ const Home = () => {
         actual.
       </p>
       <Link to='/start'>Començar</Link>
-      {/*<button>Settings</button>
+      {/*TO DO:
+      <button>Settings</button>
       <button>About</button>*/}
     </>
   );
