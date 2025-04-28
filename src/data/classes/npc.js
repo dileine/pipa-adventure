@@ -1,4 +1,4 @@
-class NPC {
+export class NPC {
   constructor(
     name,
     type,
