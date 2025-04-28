@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import scenesLevel1 from "../../data/levels/1/scenes";
+import scenesLevel1 from "../../data/scenes/scenes";
 import { GameContext } from "../../contexts/game";
 import { useScenes } from "../../hooks/useScenes";
 
