@@ -74,7 +74,7 @@ const scenesLevel1 = {
     ),
     new Scene(
       5,
-      "trolls",
+      "desnonament_trolls",
       `Els trolls son uns èssers grans que sempre van amb cara de pocs amics. No fan preguntes, només executen ordres. T'han fet fora de casa teva sense que et doni temps a fer la motxilla, ets al carrer sense res. 
       Has de trobar un lloc on dormir aquesta nit, però per això necessitaràs diners. Dones un cop d'ull al carrer, a veure si hi ha algú que pugui ajudar-te.`,
       "casaIntro"
@@ -83,7 +83,7 @@ const scenesLevel1 = {
       new Option(1, "Preguntar per un lloc on dormir", 8),
       new Option(2, "Preguntar si sap que faran a casa teva", 9),
     ]),
-    new Scene(7, "Pels carrers del Gòtic", ""),
+    new Scene(7, "carrers_gotic", ""),
     new Scene(
       8,
       "Ona_2",
@@ -94,23 +94,23 @@ const scenesLevel1 = {
         new Option(2, "Anar a la botiga", 11),
       ]
     ),
-    new Scene(9, "[PISOS TURÍSTICS]", ""),
+    new Scene(9, "pisos_turistics", ""),
     new Scene(
       10,
-      "CaLaPeque",
+      "ca_la_peque",
       `Entres a la fonda, [descripció] en Pep, el fondista, et saluda. A la barra hi ha un home barbut que sembla mig adormit i en la taula del fons, al racó més apartat, un noi que sembla preocupat.`,
-      "Ca la Peque_1",
+      "can_forquilles_1",
       [
         new Option(1, "Parlar amb el noi", 14),
         new Option(2, "Parlar amb l'home barbut", 12),
         new Option(3, "Parlar amb en Pep", 13),
       ]
     ),
-    new Scene(11, "La botiga de l'alquimista", ""),
-    new Scene(12, "L'home barbut", ""),
+    new Scene(11, "botiga_alquimista", ""),
+    new Scene(12, "home_barbut", ""),
     new Scene(
       13,
-      "CaLaPeque_2",
+      "ca_la_peque_2",
       `"Hola PLAYERNAME com va això? Vols prendre res?"`,
       "Ca la Peque",
       [
