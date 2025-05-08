@@ -7,8 +7,8 @@ export const Ogre = new Enemie(
   "", // Placeholder for image path
   "",
   {
-    Desnonament1: `Tens una hora per marxar d'aquí`,
-    Desnonament2: `Sé que ets a casa, puc veure la teva ombra per l'espiell. Porto l'ordre de desnonament, si no surts vindràn els trolls a treure't.`,
+    Desnonament1: `Tens una hora per marxar d'aquí, abans de que vinguin els trolls a treure't fora.`,
+    Desnonament2: `Sé que ets a casa, puc veure la teva ombra per l'espiell. Porto l'ordre de desnonament, els trolls estàn esperant al carrer, si no surts et farem fora.`,
   },
   {}
 );
