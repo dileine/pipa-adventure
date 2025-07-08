@@ -17,7 +17,7 @@ const PlayerForm = ({ onSubmit }) => {
     <>
       <form onSubmit={handleSubmit}>
         <label>
-          Quin és el teu nom?
+          Abans de començar, quin és el teu nom?
           <input
             type='text'
             value={name}

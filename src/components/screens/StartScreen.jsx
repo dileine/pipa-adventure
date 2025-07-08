@@ -1,43 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Popup from "../popup/popup";
-import PlayerForm from "../form/PlayerForm";
+import { playerName } from "../form/PlayerForm";
 
 const StartScreen = () => {
-  const [popupVisible, setPopupVisible] = useState(true);
-  const [playerName, setPlayerName] = useState("");
-
-  const handleSubmitName = (data) => {
-    setPlayerName(data.name);
-    setPopupVisible(false);
-  };
-
-  const handleClosePopup = () => {
-    if (!playerName) {
-      return;
-    }
-    setPopupVisible(false);
-  };
-
   return (
     <>
       {" "}
-      <Popup isVisible={popupVisible} onClose={handleClosePopup}>
-        <PlayerForm onSubmit={handleSubmitName} />
-      </Popup>
-      <h1>Hola, {playerName}</h1>
+      <h2>Benvingut, {playerName}</h2>
       <p>
-        Ets un jove recent desallotjat que emprèn una missió desesperada: trobar
-        un pis en una ciutat on els preus s'enfilen i els comerços tradicionals
-        desapareixen. Amb una forta crítica social i un toc d'humor sarcàstic,
-        el joc revela la realitat d'una ciutat en plena transformació, on els
-        veïns lluiten per sobreviure. En la recerca del teu lloc en aquest món,
-        toparàs amb éssers mitològics, paranys urbans i personatges històrics
-        que t'acompanyaran per un laberint urbà ple de sorpreses. Hauràs de
-        superar reptes, resoldre enigmes, enfrontar-te a enemics poderosos i
-        prendre decisions difícils per aconseguir una llar en aquesta ciutat
-        hostil.
+        Una joc d'aventures de text, abientat en una Barcelona fantàstica on et
+        trobaràs amb personatges extravagants, situacions surrealistes i dilemes
+        socials que et faran reflexionar sobre la bogeria del sistema
+        capitalista.
       </p>
+      <p>
+        Vius en una Barcelona que batega màgia antiga, resistència veïnal i
+        poders ocults. El que comença com una recerca desesperada per trobar un
+        sostre sota el que dormir, es converteix en una odissea per sobreviure
+        en una ciutat governada per un sistema corrupte.
+      </p>
+      <p>
+        Amb un to satíric i tocs de fantasia, "PiPa: Pisos i Paranys" et convida
+        a explorar una ciutat viva, plena de contrastos i secrets. Cada decisió
+        compta, i pot apropar-te o allunyar-te del teu objectiu final:
+        aconseguir un lloc digne on viure sense perdre't pel camí.
+      </p>
+      <p>Preparat?</p>
       <Link to='/pipa'>Som-hi!</Link>
       <Link to='/'>Tornar</Link>
     </>
