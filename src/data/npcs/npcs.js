@@ -39,7 +39,7 @@ export const Silvia = new NPC(
   {}
 );
 
-export const Sacanera = new NPC( 
+export const Sacanera = new NPC(
   "Astruc Sacanera",
   "fantastic entity",
   "Alquimista, bruixot de Ciutat Vella",
@@ -85,7 +85,7 @@ export const Ona = new NPC(
   "", // onaImage // Placeholder for image path
   "plaça Sant Just",
   {
-    Desnonament1: `"Bon dia PLAYER_NAME, veig que al final a tú també t'han fet fora de casa..."`,
+    Desnonament1: `"Bon dia PLAYER_NAME, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, cada cop més voltors compren edificis sencers i fan fora els seus veïns. Aquest barri aviat deixarà de ser dels veïns i serà de les gran coprporacions, si ja sembla un parc d'atraccions!"`,
     Desnonament2: `"És tota una aventura trobar una llar en aquesta ciutat..."`,
   },
   {}
