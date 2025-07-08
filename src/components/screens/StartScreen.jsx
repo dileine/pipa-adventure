@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Popup from "../popup/popup";
+import PlayerForm from "../form/PlayerForm";
 
 const StartScreen = () => {
+  const [popupVisible, setPopupVisible] = useState(true);
+  const [playerName, setPlayerName] = useState("");
+
+  const handleSubmitName = (data) => {
+    setPlayerName(data.name);
+    setPopupVisible(false);
+  };
+
+  const handleClosePopup = () => {
+    if (!playerName) {
+      return;
+    }
+    setPopupVisible(false);
+  };
+
   return (
     <>
-      <h1>Benvingut!</h1>
-
+      {" "}
+      <Popup isVisible={popupVisible} onClose={handleClosePopup}>
+        <PlayerForm onSubmit={handleSubmitName} />
+      </Popup>
+      <h1>Hola, {playerName}</h1>
       <p>
         Ets un jove recent desallotjat que emprèn una missió desesperada: trobar
         un pis en una ciutat on els preus s'enfilen i els comerços tradicionals

@@ -17,10 +17,10 @@ export const PopupInner = styled.div`
   position: relative;
   padding: 10rem;
   width: 50%;
-
+  background-color: rgba(47, 161, 60, 0.2);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 5px solid black;
+
   border-radius: 3rem;
 `;
 
@@ -30,6 +30,6 @@ export const CloseButton = styled.button`
   right: 10px;
   background: transparent;
   border: none;
-  font-size: 5rem;
+  font-size: 3rem;
   cursor: pointer;
 `;
