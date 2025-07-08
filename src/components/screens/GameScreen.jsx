@@ -5,6 +5,7 @@ import PlayerStats from "../dashboard/PlayerStats";
 import Inventory from "../dashboard/Inventory";
 import Popup from "../popup/popup";
 import { Link } from "react-router-dom";
+import { BoardContainer, GameContainer, LevelWrapper } from "./Screens.styled";
 
 const GameScreen = () => {
   const [popupContent, setPopupContent] = useState(null);
@@ -15,16 +16,20 @@ const GameScreen = () => {
     setPopupVisible(true);
   };
   return (
-    <>
-      <PlayerStats />
-      <button onClick={handleClickInventory}>Inventory</button>
-      <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>
-        {popupContent}
-      </Popup>
-      {/* TO DO: quest list */}
-      <Link to='/'>Tornar</Link>
-      <LevelScreen />
-    </>
+    <GameContainer>
+      <BoardContainer>
+        <PlayerStats />
+        <button onClick={handleClickInventory}>Inventory</button>
+        <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>
+          {popupContent}
+        </Popup>
+        {/* TO DO: quest list */}
+        <Link to='/'>Tornar</Link>
+      </BoardContainer>
+      <LevelWrapper>
+        <LevelScreen />
+      </LevelWrapper>
+    </GameContainer>
   );
 };
 
