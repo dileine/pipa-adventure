@@ -18,9 +18,15 @@ export class NPC {
   }
 
   speak(sceneName) {
+    console.log(sceneName);
+    console.log(this.dialogue);
     return (
       this.dialogue[sceneName] ||
       "no tinc més informació per tú en aquest moment"
     );
+  }
+
+  attack() {
+    console.log(`the ${this.name} attacks!`);
   }
 }

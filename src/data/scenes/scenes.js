@@ -1,7 +1,7 @@
 import { Scene } from "../classes/scene";
 import { Option } from "../classes/option";
-//import { Ona } from "../npcs/npcs";
-import { Ogre } from "../enemies/enemies";
+import { Mar, Ogre } from "../npcs/npcs";
+//import { Ogre } from "../enemies/enemies";
 
 //const playerName = "Pipa";
 
@@ -10,9 +10,7 @@ const scenesLevel1 = {
     new Scene(
       1,
       "Avís_desnonament",
-      `Et despertes amb un soroll molt fort a la porta. Mires per l'espiell i veus un Ogre amb cara de pocs amics amb un sobre a la mà: ${Ogre.speak(
-        "Desnonament1"
-      )} `,
+      ` ${Mar.speak("intro")} ${Ogre.speak("Desnonament1")} `,
       "Casa",
       [
         new Option(
