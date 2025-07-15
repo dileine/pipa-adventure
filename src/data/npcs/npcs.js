@@ -1,19 +1,10 @@
 import { NPC } from "../classes/npc.js";
+import { playerName } from "../../components/form/PlayerForm.jsx";
 
-export const Mar = new NPC(
-  "Mar",
-  "Lorekeeper",
-  "",
-  "", // Placeholder for image path
-  "everywhere",
-  {},
-  {}
-);
-
-// Interactive
+// Common NPCs
 export const Peque = new NPC(
   "Magda, la Peque",
-  "interactive",
+  "",
   "Cuinera de la fonda Ca la Peque",
   "", // Placeholder for image path
   "Fonda Ca la Peque",
@@ -23,7 +14,7 @@ export const Peque = new NPC(
 
 export const Samba = new NPC(
   "Jose, el Samba",
-  "interactive",
+  "",
   "Cambrer de la fonda Ca la Peque",
   "", // Placeholder for image path
   {},
@@ -39,41 +30,37 @@ export const Silvia = new NPC(
   {}
 );
 
-export const Sacanera = new NPC(
-  "Astruc Sacanera",
-  "fantastic entity",
-  "Alquimista, bruixot de Ciutat Vella",
+export const Ivan = new NPC(
+  "Iván",
+  "",
+  "Forner de la Fleca del barri",
   "", // Placeholder for image path
-  "Botiga Enginy",
   {},
   {}
 );
 
 //Quest-givers
-export const Ivan = new NPC(
-  "Iván",
-  "quest-giver",
-  "Forner de la Fleca dle barri",
-  "", // Placeholder for image path
-  {},
-  {}
-);
-
-export const Monica = new NPC(
-  "Mónica",
-  "quest-giver",
-  "periodista, activista feminista",
-  "", // Placeholder for image path
-  {},
-  {}
-);
-
 export const Joana = new NPC(
   "Joana",
   "quest-giver",
-  "Activista del Sillogat",
+  "Periodista i activista del Sillogat, amb el cabell blau elèctric, sempre llegint un llibre del revés.",
   "", //PlaceHolder for image path
-  {},
+  {
+    Missatge: `'Hola criatura, tens un missatge per mi, oi? Vine. En silenci, les parets escolten, i els llibres parlen.'`,
+    Kasal: `'Vine amb mi, et portaré al Kasal, l'antic centre cívil on ara es reuneix el Consell de Veus Desesperades'`,
+  },
+  {}
+);
+
+export const Mar = new NPC(
+  "Mar",
+  "fantastic entity",
+  "És un èsser màgic que apareix quan el necessites. Porta unes ulleres de soldador que li fan els ulls encara més grans, viu apartada de la societat i sempre parla amb un llenguatge poètic.",
+  "", // Placeholder for image path
+  "A tot arreu",
+  {
+    R1: `'No et fïis de le sombres llargues i mai acceptis un cafè de l'alcalde.'`,
+  },
   {}
 );
 
@@ -85,17 +72,8 @@ export const Ona = new NPC(
   "", // onaImage // Placeholder for image path
   "plaça Sant Just",
   {
-    Desnonament1: `"Bon dia PLAYER_NAME, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, cada cop més voltors compren edificis sencers i fan fora els seus veïns. Aquest barri aviat deixarà de ser dels veïns i serà de les gran coprporacions, si ja sembla un parc d'atraccions!"`,
-    Desnonament2: `"És tota una aventura trobar una llar en aquesta ciutat..."`,
+    Desnonament: `"Bon dia, ${playerName}, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, aquest maleït A. Voltor, l'especulador inmoral que hi ha darrera de tot aquests desnonaments, està fent fora a tots els veïns, té més propietats que escrúpuls aquest poca vergonya!"`,
   },
-  {}
-);
-export const Encanteric = new NPC(
-  "Encantèric",
-  "fantastic entity",
-  "Estudiant de bruixeria i alquimia de la UABB. Alumne de l'Astruc Sacanera",
-  "", // Placeholder for image path
-  {},
   {}
 );
 
@@ -107,8 +85,7 @@ export const Ogre = new NPC(
   "", // Placeholder for image path
   "",
   {
-    Desnonament1: `"Tens una hora per marxar d'aquí, abans de que vinguin els trolls a treure't fora."`,
-    Desnonament2: `"Sé que ets a casa, puc veure la teva ombra per l'espiell. Porto l'ordre de desnonament, els trolls estàn esperant al carrer, si no surts et farem fora."`,
+    Desnonament: `'Som aquí per complir una ordre judicial de desnonament. Et demanem que colaboris i desallotgis l'habitatge de manera pacífica per evitar incidents.'`,
   },
   {}
 );
