@@ -8,12 +8,6 @@ const StartScreen = () => {
       {" "}
       <h2>Benvingut, {playerName}</h2>
       <p>
-        Una joc d'aventures de text, abientat en una Barcelona fantàstica on et
-        trobaràs amb personatges extravagants, situacions surrealistes i dilemes
-        socials que et faran reflexionar sobre la bogeria del sistema
-        capitalista.
-      </p>
-      <p>
         Vius en una Barcelona que batega màgia antiga, resistència veïnal i
         poders ocults. El que comença com una recerca desesperada per trobar un
         sostre sota el que dormir, es converteix en una odissea per sobreviure
