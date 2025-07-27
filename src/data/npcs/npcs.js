@@ -24,7 +24,7 @@ export const Samba = new NPC(
 export const Silvia = new NPC(
   "Sílvia",
   "interactive",
-  "Herbolària de la plaça Sant Just",
+  "Bibliotecaria de la BAB (Biblioteca Arcana de Barcelona),",
   "", // Placeholder for image path
   {},
   {}
@@ -72,7 +72,13 @@ export const Ona = new NPC(
   "", // onaImage // Placeholder for image path
   "plaça Sant Just",
   {
-    Desnonament: `"Bon dia, ${playerName}, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, aquest maleït A. Voltor, l'especulador inmoral que hi ha darrera de tot aquests desnonaments, està fent fora a tots els veïns, té més propietats que escrúpuls aquest poca vergonya!"`,
+    Desnonament: `'Bon dia, ${playerName}, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, aquest maleït A. Voltor, l'especulador inmoral que hi ha darrera de tot aquests desnonaments, està fent fora a tots els veïns, té més propietats que escrúpuls aquest poca vergonya!'`,
+    Consell1: `'Si vols fer front a l'Alfons Voltor, necessites un pla. Primer, has de reunir informació sobre ell i les seves activitats. Potser pots parlar amb altres veïns afectats o investigar els seus negocis. Després, hauràs de trobar aliats que t'ajudin en la teva causa. No serà fàcil, però si et mantens ferm i astut, potser podràs aturar-lo.'`,
+    Consell2: `'Si vols aconseguir informació hauràs de parlar amb la Joana, l'activista del barri. Ella sempre està al corrent de tot el que passa i potser té alguna pista sobre com aturar l'Alfons Voltor.'`,
+    Kasal: `'El Kasal és un lloc on es reuneixen els veïns per parlar dels problemes del barri. És un bon lloc per començar a buscar aliats i informació.'`,
+    Fleca: `'La Fleca és un bon lloc per començar a buscar informació. El forner, l'Iván, sempre està al corrent de les xafarderies del barri i potser té alguna pista sobre l'Alfons Voltor.'`,
+    Fonda: `'La fonda Ca la Peque és un bon lloc per descansar i menjar alguna cosa. La Peque i el Samba, sempre tenen una paraula amable i potser alguna informació útil.'`,
+    Sílvia: `'La Sílvia la bibliotecaria de la BAB, és una font d'informació inestimable. Sempre està llegint i potser té algun llibre o article que pugui ajudar-te a entendre millor la situació.'`,
   },
   {}
 );

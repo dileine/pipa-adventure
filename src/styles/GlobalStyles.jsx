@@ -35,7 +35,6 @@ h1, h2, {
 
   div{
     font-size:2.5rem;
-    padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,5 +69,12 @@ h1, h2, {
     width: 50%;
     justify-self: center;
   }
+
+  .container{
+  margin: 5rem;
+  border: 2px solid ${THEME.color.text};
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: ${THEME.color.background};
 
 `;
