@@ -14,9 +14,9 @@ const LevelScreen = () => {
 
   return (
     <LevelScreenContainer>
-      <h1>img placeholder</h1>
+      <h1>{levelName}</h1>
       <LevelMainArea>
-        <h1>{levelName}</h1>
+          <p>placeholder for Scene img</p>
         <LevelTextArea>
           <OptionButton />
         </LevelTextArea>

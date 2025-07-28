@@ -8,16 +8,17 @@ export const GameScreenContainer = styled.div`
 `;
 
 export const Sidebar = styled.div`
-  width: 250px;
   min-width: 250px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const MainContent = styled.div`
-  margin-left: 250px;
+  margin-left: 1rem;
+
   flex: 1;
   height: 100vh;
   overflow-y: auto;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LevelScreenContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
 `;
 
@@ -12,11 +12,11 @@ export const LevelMainArea = styled.div`
   padding: 20px;
   overflow-y: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
 `;
 
-export const  LevelTextArea= styled.div`
+export const LevelTextArea = styled.div`
   flex: 1;
   width: 100%;
   max-width: 1400px;

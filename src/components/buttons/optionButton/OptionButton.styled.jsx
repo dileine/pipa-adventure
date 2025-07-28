@@ -10,6 +10,7 @@ export const SceneContent = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+  flex-direction: row;
 
   @media (max-width: 768px) {
     flex-direction: column;
