@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 //import PlayerScreen from "./PlayerScreen";
-import LevelScreen from "./LevelScreen";
-import PlayerStats from "../dashboard/PlayerStats";
-import Inventory from "../dashboard/Inventory";
-import Popup from "../popup/popup";
+import LevelScreen from "../levelScreen/LevelScreen";
+import PlayerStats from "../../dashboard/PlayerStats";
+import Inventory from "../../dashboard/Inventory";
+import Popup from "../../popup/popup";
 import { Link } from "react-router-dom";
-import { BoardContainer, GameContainer, LevelWrapper } from "../../styles/ScreensStyles";
+import {
+  GameScreenContainer,
+  Sidebar,
+  MainContent,
+} from "./Game.Screen.styled";
 
 const GameScreen = () => {
   const [popupContent, setPopupContent] = useState(null);
@@ -16,20 +20,21 @@ const GameScreen = () => {
     setPopupVisible(true);
   };
   return (
-    <GameContainer>
-      <BoardContainer className='container'>
+    <GameScreenContainer>
+      <Sidebar>
         <PlayerStats />
-        <button onClick={handleClickInventory}>Inventory</button>
+        <button onClick={handleClickInventory}>Inventario</button>
+        <Link to='/'>Tornar</Link>
+      </Sidebar>
+
+      <MainContent>
         <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>
           {popupContent}
         </Popup>
-        {/* TO DO: quest list */}
-        <Link to='/'>Tornar</Link>
-      </BoardContainer>
-      <LevelWrapper className='container'>
+
         <LevelScreen />
-      </LevelWrapper>
-    </GameContainer>
+      </MainContent>
+    </GameScreenContainer>
   );
 };
 

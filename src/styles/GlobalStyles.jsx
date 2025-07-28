@@ -34,6 +34,7 @@ h1, h2, {
     }
 
   div{
+    width: 100%
     font-size:2.5rem;
     display: flex;
     justify-content: center;
@@ -64,17 +65,5 @@ h1, h2, {
         background: ${THEME.color.primary};
     }
   }
-
-  .logo {
-    width: 50%;
-    justify-self: center;
-  }
-
-  .container{
-  margin: 5rem;
-  border: 2px solid ${THEME.color.text};
-  border-radius: 10px;
-  padding: 2rem;
-  background-color: ${THEME.color.background};
-
+ 
 `;
