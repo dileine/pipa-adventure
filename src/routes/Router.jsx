@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../components/home/Home";
 import StartScreen from "../components/screens/StartScreen";
-import GameScreen from "../components/screens/GameScreen";
+import GameScreen from "../components/screens/gameScreen/GameScreen";
 
 const Router = () => {
   return (
