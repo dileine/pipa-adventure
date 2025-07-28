@@ -1,5 +1,5 @@
 export class Scene {
-  constructor(id, name, image, text, location, options = []) {
+  constructor(id, name, image = {}, text, location, options = []) {
     this.id = id;
     this.name = name;
     this.image = image;
