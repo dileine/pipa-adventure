@@ -15,55 +15,7 @@ html{
 
 body{
     height: 100vh;
-    background: linear-gradient(${THEME.color.background}, ${THEME.color.secondary});
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   width: 100%;
     
 }
-
-h1, h2, {
-    font-size: 6rem;
-    color: ${THEME.color.header};
-  }
-
- h3 {
-    font-size: 4rem;
-     color: ${THEME.color.secondary};
-    }
-
-  div{
-    width: 100%
-    font-size:2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    }
-
-  p {
-    font-size: 3rem;
-    color: ${THEME.color.text};
-  }
-
-  a{
-  font-size: 2rem;
-   color: green;
-  
-  }
-
-  button{
-    font-size: 2rem;
-    color: ${THEME.color.text};
-    border: none;
-    border-radius: 25px;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover{
-        background: ${THEME.color.primary};
-    }
-  }
- 
 `;
