@@ -6,6 +6,7 @@ import brain_img from "../assets/icons/brain.png";
 import gotic_1 from "../assets/images/barri-gotic.jpeg";
 import foc from "../assets/icons/fire.png";
 import espasa from "../assets/icons/sword.png";
+import troll from "../assets/images/troll.webp";
 
 export const icons = {
   pellofes: pellofes_img,
@@ -19,4 +20,5 @@ export const icons = {
 
 export const images = {
   gotic: gotic_1,
+  troll: troll,
 };
