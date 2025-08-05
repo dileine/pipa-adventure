@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { GameContext } from "../../../contexts/game";
 import game from "../../../data/config/game.json";
 import OptionButton from "../../buttons/optionButton/OptionButton";
