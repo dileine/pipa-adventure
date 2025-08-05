@@ -4,15 +4,17 @@ import Quinque_img from "../assets/icons/quinque.png";
 import pellofes_img from "../assets/icons/gold.png";
 import brain_img from "../assets/icons/brain.png";
 import gotic_1 from "../assets/images/barri-gotic.jpeg";
+import foc from "../assets/icons/fire.png";
+import espasa from "../assets/icons/sword.png";
 
 export const icons = {
+  pellofes: pellofes_img,
+  health: brain_img,
+  level: foc,
+  experience: espasa,
   cantimplora: Cantimplora_img,
   carta: Carta_img,
   quinque: Quinque_img,
-  pellofes: pellofes_img,
-  health: brain_img,
-  level: "",
-  experience: "",
 };
 
 export const images = {
