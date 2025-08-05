@@ -17,27 +17,6 @@ export const SceneContent = styled.div`
   }
 `;
 
-export const ImageArea = styled.div`
-  width: 30%;
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    max-height: 300px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-`;
-
 export const TextArea = styled.div`
   p {
     font-size: 2.5rem;
