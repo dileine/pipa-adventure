@@ -1,22 +1,40 @@
-import { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { GameContext } from "../../../contexts/game";
 import game from "../../../data/config/game.json";
 import OptionButton from "../../buttons/optionButton/OptionButton";
+import scenesLevel1 from "../../../data/scenes/scenes";
 import {
   LevelScreenContainer,
   LevelMainArea,
   LevelTextArea,
+  ImageArea,
 } from "./LevelScreen.styled";
 
 const LevelScreen = () => {
-  const { currentLevel } = useContext(GameContext);
+  const { currentLevel, currentScene } = useContext(GameContext);
   const levelName = game.levels[currentLevel] || "Nivell desconegut";
+
+  if (!currentLevel) {
+    console.log("No current level set");
+    return <div>Loading...</div>;
+  }
+
+  const scene = scenesLevel1[currentLevel]?.find(
+    (scene) => scene.id === currentScene
+  );
+
+  if (!scene) {
+    console.error("Scene not found", currentScene);
+    return null;
+  }
 
   return (
     <LevelScreenContainer>
       <h1>{levelName}</h1>
       <LevelMainArea>
-          <p>placeholder for Scene img</p>
+        <ImageArea>
+          {scene.sceneImg && <img src={scene.sceneImg} alt='Escena' />}
+        </ImageArea>
         <LevelTextArea>
           <OptionButton />
         </LevelTextArea>

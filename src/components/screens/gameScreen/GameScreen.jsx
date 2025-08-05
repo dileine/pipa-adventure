@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 //import PlayerScreen from "./PlayerScreen";
 import LevelScreen from "../levelScreen/LevelScreen";
-import PlayerStats from "../../dashboard/PlayerStats";
-import Inventory from "../../dashboard/Inventory";
+import PlayerStats from "../statsScreen/PlayerStats";
+import Inventory from "../inventoryScreen/Inventory";
 import Popup from "../../popup/popup";
 import { Link } from "react-router-dom";
 import {
@@ -26,12 +26,10 @@ const GameScreen = () => {
         <button onClick={handleClickInventory}>Inventario</button>
         <Link to='/'>Tornar</Link>
       </Sidebar>
-
       <MainContent>
         <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>
           {popupContent}
         </Popup>
-
         <LevelScreen />
       </MainContent>
     </GameScreenContainer>

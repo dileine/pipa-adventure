@@ -2,15 +2,14 @@ import styled from "styled-components";
 import { THEME } from "../../../common/theme";
 
 export const Container = styled.div`
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
 `;
 
 export const SceneContent = styled.div`
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 2rem;
-  flex-direction: row;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -40,32 +39,31 @@ export const ImageArea = styled.div`
 `;
 
 export const TextArea = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-
   p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    line-hight: 1.5;
+    color: ${THEME.color.text};
     margin-bottom: 2rem;
-    line-height: 1.5;
   }
 `;
 
 export const ButtonsArea = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 
   button {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: ${THEME.color.text};
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
     padding: 1rem 2rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+
     &:hover {
       background: ${THEME.color.primary};
+      transform: translateY(-2px);
     }
   }
 `;
