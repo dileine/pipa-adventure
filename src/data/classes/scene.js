@@ -1,8 +1,17 @@
 export class Scene {
-  constructor(id, name, image = {}, text, location, options = []) {
+  constructor(
+    id,
+    name,
+    sceneImg = {},
+    npcImg = {},
+    text,
+    location,
+    options = []
+  ) {
     this.id = id;
     this.name = name;
-    this.image = image;
+    this.sceneImg = sceneImg;
+    this.npcImg = npcImg;
     this.text = text;
     this.location = location;
     this.options = options;

@@ -6,6 +6,9 @@ export const GameProvider = ({ children }) => {
   const [currentLevel, setCurrentLevel] = useState(1);
   const [currentScene, setCurrentScene] = useState(1);
 
+  //debugging logs
+  console.log("GameProvider - Current Level:", currentLevel);
+
   return (
     <GameContext.Provider
       value={{

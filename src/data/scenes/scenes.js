@@ -3,13 +3,12 @@ import { Option } from "../classes/option";
 import { Ogre, Ona } from "../npcs/npcs";
 import { images } from "../../assets/assets";
 
-//const playerName = "Pipa";
-
 const scenesLevel1 = {
   1: [
     new Scene(
       1,
       "desnonament",
+      "",
       "",
       `Et despertes amb un soroll molt fort a la porta. Mires per l'espiell i veus dos trolls i un Ogre burocràtic ambs uns papers a la mà. L'Ogre comença allegir els papers ${Ogre.speak(
         "Desnonament"
@@ -20,6 +19,7 @@ const scenesLevel1 = {
       2,
       "desnonat",
       `${images.gotic}`,
+      "",
       `Surts de casa, dones un cop d'ull a la plaça, no saps molt bé cap a on anar. Des del mig de la plaça hi ha una senyora que et mira i et fa senyals per a que vagis a parlar amb ella. És l'Ona, l'encantèria gitana, segur que et pot donar un cop de mà o si més no informació útil.`,
       "plaça",
       [
@@ -55,5 +55,7 @@ const scenesLevel1 = {
     ),
   ],
 };
+// Debugging log to check if scenesLevel1 is defined before export
+console.log("Scenes Data:", scenesLevel1);
 
 export default scenesLevel1;
