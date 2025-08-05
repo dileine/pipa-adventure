@@ -8,7 +8,7 @@ export const StartScreenContainer = styled.div`
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  margin: 6rem 20rem;
+  margin: 20rem;
 
   h2 {
     font-size: 4rem;
