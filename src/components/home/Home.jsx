@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import Popup from "../popup/popup";
 import PlayerForm from "../form/PlayerForm";
+import { HomeContainer, StyledLink } from "./Home.styled";
 
 const Home = () => {
   const [popupVisible, setPopupVisible] = useState(true);
@@ -19,24 +20,23 @@ const Home = () => {
     setPopupVisible(false);
   };
   return (
-    <>
+    <HomeContainer>
       <Popup isVisible={popupVisible} onClose={handleClosePopup}>
         <PlayerForm onSubmit={handleSubmitName} />
       </Popup>
-      <h1>
-        <strong>PiPa: Pisos i Paranys</strong>
-        <p>
+      <h1>PiPa: Pisos i Paranys</h1>
+      <StyledLink to='/start'>començar</StyledLink>
+      {/*TO DO:
+      <button>Settings</button>
+      <button>About</button>
+       <p>
           Una joc d'aventures de text, ambientat en una Barcelona fantàstica on
           et trobaràs amb personatges extravagants, situacions surrealistes i
           dilemes socials que et faran reflexionar sobre la bogeria del sistema
           capitalista.
         </p>
-      </h1>
-      <Link to='/start'>començar</Link>
-      {/*TO DO:
-      <button>Settings</button>
-      <button>About</button>*/}
-    </>
+      */}
+    </HomeContainer>
   );
 };
 
