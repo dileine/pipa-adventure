@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GameContext } from "../../../contexts/game";
-import game from "../../../data/config/game.json";
+//import game from "../../../data/config/game.json";
 import OptionButton from "../../buttons/optionButton/OptionButton";
 import scenesLevel1 from "../../../data/scenes/scenes";
 import {
@@ -12,7 +12,7 @@ import {
 
 const LevelScreen = () => {
   const { currentLevel, currentScene } = useContext(GameContext);
-  const levelName = game.levels[currentLevel] || "Nivell desconegut";
+  //const levelName = game.levels[currentLevel] || "Nivell desconegut";
 
   if (!currentLevel) {
     console.log("No current level set");
