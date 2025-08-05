@@ -30,7 +30,7 @@ const LevelScreen = () => {
 
   return (
     <LevelScreenContainer>
-      <h1>{levelName}</h1>
+      <h1>{scene.name}</h1>
       <LevelMainArea>
         <ImageArea>
           {scene.sceneImg && <img src={scene.sceneImg} alt='Escena' />}
