@@ -4,11 +4,13 @@ import LevelScreen from "../levelScreen/LevelScreen";
 import PlayerStats from "../statsScreen/PlayerStats";
 import Inventory from "../inventoryScreen/Inventory";
 import Popup from "../../popup/popup";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import {
   GameScreenContainer,
   Sidebar,
   MainContent,
+  ButtonsArea,
+  StyledLink,
 } from "./Game.Screen.styled";
 
 const GameScreen = () => {
@@ -23,8 +25,10 @@ const GameScreen = () => {
     <GameScreenContainer>
       <Sidebar>
         <PlayerStats />
-        <button onClick={handleClickInventory}>Inventario</button>
-        <Link to='/'>Tornar</Link>
+        <ButtonsArea>
+          <button onClick={handleClickInventory}>Inventario</button>
+          <StyledLink to='/'>Tornar</StyledLink>
+        </ButtonsArea>
       </Sidebar>
       <MainContent>
         <Popup isVisible={popupVisible} onClose={() => setPopupVisible(false)}>

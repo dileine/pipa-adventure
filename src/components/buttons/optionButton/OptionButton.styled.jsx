@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { THEME } from "../../../common/theme";
 
 export const Container = styled.div`
-  padding: 2rem;
+  padding: 1.5rem;
   width: 100%;
 `;
 
@@ -40,7 +40,7 @@ export const ImageArea = styled.div`
 
 export const TextArea = styled.div`
   p {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     line-hight: 1.5;
     color: ${THEME.color.text};
     margin-bottom: 2rem;

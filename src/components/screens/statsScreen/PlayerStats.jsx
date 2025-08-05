@@ -21,9 +21,7 @@ const PlayerStats = () => {
       {stats.map((stat, index) => (
         <StatRow key={index}>
           <StatIcon src={stat.icon} alt={stat.label} />
-          <span>
-            {stat.label}: {stat.value}
-          </span>
+          <span>{stat.value}</span>
         </StatRow>
       ))}
     </StatContainer>
