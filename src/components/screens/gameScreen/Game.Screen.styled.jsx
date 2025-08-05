@@ -15,8 +15,8 @@ export const Sidebar = styled.div`
   min-width: 300px;
   padding: 2rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1rem;
+  left: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

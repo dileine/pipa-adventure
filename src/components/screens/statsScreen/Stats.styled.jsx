@@ -17,7 +17,7 @@ export const StatRow = styled.p`
 `;
 
 export const StatIcon = styled.img`
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
 `;
