@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FormBtn, InputForm, PlayerFormWrapper } from "./PlayerForm.styled";
 
 let playerName = "";
 
@@ -14,19 +15,19 @@ const PlayerForm = ({ onSubmit }) => {
   };
 
   return (
-    <>
+    <PlayerFormWrapper>
       <form onSubmit={handleSubmit}>
         <label>
           Abans de començar, quin és el teu nom?
-          <input
+          <InputForm
             type='text'
             value={name}
             onChange={(e) => setName(e.target.value)}
-          />
+          ></InputForm>
         </label>
-        <button type='submit'>Enviar</button>
+        <FormBtn type='submit'>Enviar</FormBtn>
       </form>
-    </>
+    </PlayerFormWrapper>
   );
 };
 

@@ -17,7 +17,7 @@ export const PopupInner = styled.div`
   position: relative;
   padding: 10rem;
   width: 50%;
-  background-color: rgba(36, 243, 60, 0.32);
+  background-color: rgba(192, 239, 197, 0.32);
   box-shadow: 0px 0px 10px 0px rgba(32, 119, 191, 0.38);
   border-radius: 10px;
   border-radius: 3rem;
