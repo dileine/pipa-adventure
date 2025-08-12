@@ -7,6 +7,7 @@ import gotic_1 from "../assets/images/barri-gotic.jpeg";
 import foc from "../assets/icons/fire.png";
 import espasa from "../assets/icons/sword.png";
 import troll from "../assets/images/troll.webp";
+import Ona from "../assets/images/ona.jpg";
 
 export const icons = {
   pellofes: pellofes_img,
@@ -21,4 +22,5 @@ export const icons = {
 export const images = {
   gotic: gotic_1,
   troll: troll,
+  ona: Ona,
 };
