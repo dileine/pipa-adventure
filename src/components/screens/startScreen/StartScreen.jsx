@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 //import { Link } from "react-router-dom";
-import { playerName } from "../../form/PlayerForm";
+import { PlayerContext } from "../../../contexts/player";
 import {
   StartScreenContainer,
   StyledLink,
@@ -8,6 +8,7 @@ import {
 } from "./StartScreen.styled";
 
 const StartScreen = () => {
+  const { playerName } = useContext(PlayerContext);
   return (
     <StartScreenContainer>
       {" "}

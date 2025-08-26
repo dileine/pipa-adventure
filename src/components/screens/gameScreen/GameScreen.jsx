@@ -10,7 +10,7 @@ import {
   Sidebar,
   MainContent,
   ButtonsArea,
-  StyledLink,
+  //StyledLink,
 } from "./Game.Screen.styled";
 
 const GameScreen = () => {
@@ -26,8 +26,8 @@ const GameScreen = () => {
       <Sidebar>
         <PlayerStats />
         <ButtonsArea>
-          <button onClick={handleClickInventory}>Inventario</button>
-          <StyledLink to='/'>Tornar</StyledLink>
+          <button onClick={handleClickInventory}>Tothicap</button>
+          {/* TO DO: create menu & <StyledLink to='/'>MENU</StyledLink> */}
         </ButtonsArea>
       </Sidebar>
       <MainContent>

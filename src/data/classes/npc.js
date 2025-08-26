@@ -1,12 +1,5 @@
 export class NPC {
-  constructor(
-    name,
-    type,
-    description,
-    location,
-    dialogue = {},
-    mission = {}
-  ) {
+  constructor(name, type, description, location, dialogue = {}, mission = {}) {
     this.name = name;
     this.type = type;
     this.description = description;
@@ -16,8 +9,6 @@ export class NPC {
   }
 
   speak(sceneName) {
-    console.log(sceneName);
-    console.log(this.dialogue);
     return (
       this.dialogue[sceneName] ||
       "no tinc més informació per tú en aquest moment"

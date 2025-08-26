@@ -16,7 +16,7 @@ export class Option {
     this.id = id;
     this.text = text;
     this.Component = () => (
-      <ActionButton
+      <ActionButton  
         text={text}
         nextScene={nextScene}
         itemsToAdd={itemsToAdd}

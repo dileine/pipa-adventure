@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { PlayerContext } from "../../contexts/player";
 import { FormBtn, InputForm, PlayerFormWrapper } from "./PlayerForm.styled";
-
-let playerName = "";
 
 const PlayerForm = ({ onSubmit }) => {
   const [name, setName] = useState("");
+  const { setPlayerName } = useContext(PlayerContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    playerName = name;
+    setPlayerName(name);
     if (onSubmit) {
       onSubmit({ name });
     }
@@ -30,7 +30,5 @@ const PlayerForm = ({ onSubmit }) => {
     </PlayerFormWrapper>
   );
 };
-
-export { playerName };
 
 export default PlayerForm;

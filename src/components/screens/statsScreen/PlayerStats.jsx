@@ -6,7 +6,7 @@ import { StatContainer, StatRow, StatIcon } from "./Stats.styled";
 
 const PlayerStats = () => {
   const { currentLevel } = useContext(GameContext);
-  const { experience, health, gold } = useContext(PlayerContext);
+  const { playerName, experience, health, gold } = useContext(PlayerContext);
 
   const stats = [
     { icon: icons.level, label: "Nivell", value: currentLevel },
@@ -17,7 +17,7 @@ const PlayerStats = () => {
 
   return (
     <StatContainer>
-      <h2>Stats</h2>
+      <h2>{playerName}</h2>
       {stats.map((stat, index) => (
         <StatRow key={index}>
           <StatIcon src={stat.icon} alt={stat.label} />

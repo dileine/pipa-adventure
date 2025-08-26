@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { THEME } from "../../../common/theme";
 
 export const StatContainer = styled.div`
+  margin: 2.5rem;
   padding.1.5rem;
   border-radius:8px;
   width: 100%;
