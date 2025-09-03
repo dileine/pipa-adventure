@@ -13,12 +13,12 @@ export const StatRow = styled.p`
   align-items: center;
   gap: 1.2rem;
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: ${THEME.color.text};
 `;
 
 export const StatIcon = styled.img`
-  width: 42px;
-  height: 42px;
+  max-width: 12%;
+  height: auto;
   object-fit: contain;
 `;
