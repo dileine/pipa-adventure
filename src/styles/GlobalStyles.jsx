@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+      overflow: hidden;
 }
 
 html{
@@ -14,7 +15,7 @@ html{
 
 body{
     height: 100vh;
-   width: 100%;
-    
+    width: 100%;
+
 }
 `;

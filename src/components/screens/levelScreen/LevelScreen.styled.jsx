@@ -6,23 +6,21 @@ export const LevelScreenContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 2rem;
+  gap: 1rem;
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 6rem;
     color: ${THEME.color.header};
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
 export const LevelMainArea = styled.div`
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 `;
 
 export const LevelTextArea = styled.div`
@@ -35,7 +33,7 @@ export const LevelTextArea = styled.div`
 `;
 
 export const ImageArea = styled.div`
-  width: 100%;
+  width: 30%;
   max-width: 600px;
   margin: 0 auto;
 

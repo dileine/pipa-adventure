@@ -30,7 +30,7 @@ export const MainContent = styled.div`
   overflow-y: auto;
   padding: 2rem;
   margin-left: 300px;
-  margin-top: 8rem;
+  margin-top: 3rem;
 `;
 
 export const ButtonsArea = styled.div`
