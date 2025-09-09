@@ -3,8 +3,8 @@ export class NPC {
     this.name = name;
     this.description = description;
     this.location = location;
-    this.dialogue = dialogue; // Array of strings
-    this.mission = mission; // { title: "", description: "" }
+    this.dialogue = dialogue;
+    this.mission = mission;
   }
 
   speak(sceneName) {

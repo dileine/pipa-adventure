@@ -64,7 +64,8 @@ export const Monica = new NPC(
     Sistema_despulla: `'El sistema despulla els habitants de les seves arrels, de la seva dignitat.'`,
     Sistema_segrestat: `'El sistema ha estat segrestat per una entitat fosca, una aliança entre fons voltor, entitats màgiques corruptes i tecnòcrates d'ultratomba, liderada per una 'Pesanta' que no et deixa respirar, provoca angoixa i mal sons.`,
     Trolls: `'Tenene predisposició a actuar amb un grau d'hostilitat que barreja la imprudència i la il·legalitat. No fan preguntes, només executen ordres.'`,
-  }
+  },
+  {}
 );
 
 export const Mar = new NPC(
@@ -74,7 +75,8 @@ export const Mar = new NPC(
   {
     Alcalde: `'No et fïis de les ombres llargues i mai acceptis un cafè de l'alcalde.'`,
     Fake_news: `'Existeix una organització secreta que manipula la realitat des d'algun lloc que ningú sap trobar.'`,
-  }
+  },
+  {}
 );
 
 //Fantastic entities & Historic characters
@@ -83,7 +85,7 @@ export const Ona = new NPC(
   "Encantèria Gitana",
   "plaça Sant Just",
   {
-    Desnonament: `'Bon dia, veig que al final a tú també t'han fet fora de casa. Desgraciadament no ets l'únic, el maleït Alfons Voltor, l'especulador inmoral que hi ha darrera de tots aquests desnonaments, està fent fora a tots els veïns, té més propietats que escrúpuls aquest poca vergonya!'`,
+    Desnonament: `'Bon dia, veig que al final a tú també et faran fora de casa. Desgraciadament no ets l'únic, el maleït Alfons Voltor, l'especulador inmoral que hi ha darrera de tots aquests desnonaments, està fent fora a tots els veïns, té més propietats que escrúpuls aquest poca vergonya!'`,
     Consell1: `'Si vols fer front a l'Alfons Voltor, necessites un pla. Primer, has de reunir informació sobre ell i les seves activitats. Potser pots parlar amb altres veïns afectats o investigar els seus negocis. Després, hauràs de trobar aliats que t'ajudin en la teva causa. No serà fàcil, però si et mantens ferm i astut, potser podràs aturar-lo.'`,
     Fleca: `'La Fleca és un bon lloc per començar a buscar informació. El forner, l'Iván, sempre està al corrent de les xafarderies del barri i potser té alguna pista sobre l'Alfons Voltor.'`,
     Fonda: `'La fonda Ca la Peque és un bon lloc per descansar i menjar alguna cosa. La Peque i el Samba, sempre tenen una paraula amable i potser alguna informació útil.'`,
@@ -145,6 +147,7 @@ export const Paperam = new NPC(
   "Gegant de la torre dels buròcrates, fet de documents. ",
   "",
   {
+    Desnonament: `'Recorda que tens 10 dies per presentar una al·legació. Si no ho fas, el desnonament es portarà a terme segons la llei.'`,
     Random: `'No hi ha cap problema que no es pugui resoldre amb un bon munt de paperassa.'`,
     Atac: `'Si no compleixes amb els tràmits, et faré un embolic de papers que no podràs resoldre mai.'`,
   },
