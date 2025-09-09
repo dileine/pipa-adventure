@@ -1,7 +1,6 @@
 export class NPC {
-  constructor(name, type, description, location, dialogue = {}, mission = {}) {
+  constructor(name, description, location, dialogue = {}, mission = {}) {
     this.name = name;
-    this.type = type;
     this.description = description;
     this.location = location;
     this.dialogue = dialogue; // Array of strings
@@ -11,8 +10,13 @@ export class NPC {
   speak(sceneName) {
     return (
       this.dialogue[sceneName] ||
-      "no tinc més informació per tú en aquest moment"
+      "No tinc més informació per tú en aquest moment"
     );
+  }
+
+  quest() {
+    console.log(`the ${this.name} gives you a quest!`);
+    return this.mission;
   }
 
   attack() {
