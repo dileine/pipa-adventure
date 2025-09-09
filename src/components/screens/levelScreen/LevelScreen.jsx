@@ -34,6 +34,7 @@ const LevelScreen = () => {
       <LevelMainArea>
         <ImageArea>
           {scene.sceneImg && <img src={scene.sceneImg} alt='Escena' />}
+          {/* TODO: if (scene.location){location description // tip}*/}
         </ImageArea>
         <LevelTextArea>
           <OptionButton />

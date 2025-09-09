@@ -36,6 +36,7 @@ export const ImageArea = styled.div`
   width: 30%;
   max-width: 600px;
   margin: 0 auto;
+  padding: 2rem;
 
   img {
     width: 100%;
