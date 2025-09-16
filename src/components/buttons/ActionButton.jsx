@@ -20,11 +20,12 @@ const ActionButton = ({
   const { goToScene } = useScenes();
 
   const handleClick = () => {
+    console.log("ActionButton clicked with items:", itemsToAdd);
     if (itemsToAdd.length > 0) {
       addInventory(itemsToAdd);
     }
     if (itemToRemove.length > 0) {
-      removeInventory.forEach((item) => removeInventory(item));
+      itemToRemove.forEach((item) => removeInventory(item));
     }
     if (healthToIncrease > 0) {
       increaseHealth(healthToIncrease);

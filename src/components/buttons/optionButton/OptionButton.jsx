@@ -9,7 +9,6 @@ import {
   ButtonsArea,
 } from "./OptionButton.styled";
 
-
 const OptionButton = () => {
   const { currentLevel, currentScene } = useContext(GameContext);
   const { goToScene } = useScenes();
